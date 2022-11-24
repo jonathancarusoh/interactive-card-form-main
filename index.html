@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="Estilos.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fondo">
+      <img src="./images/bg-main-desktop.png" alt="" />
+    </div>
+    <div class="fondo-mobile">
+      <img src="./images/bg-main-mobile.png" alt="" />
+    </div>
+    <div class="card-front">
+      <img src="./images/bg-card-front.png" alt="" />
+
+      <p class="card-front-num">0000 0000 0000 0000</p>
+      <p class="card-front-name">Jane Appleseed</p>
+      <p class="card-front-fecha">00/00</p>
+    </div>
+
+    <div class="card-back">
+      <img src="./images/bg-card-back.png" alt="" />
+      <p class="card-pasw">000</p>
+    </div>
+    <div class="form-container">
+      <form action="#">
+        <div class="field-group field-group-fname">
+          <label for="#">Cardholder Name</label>
+          <input type="text" id="fname" name="fname" placeholder="" />
+          <span></span>
+        </div>
+
+        <div class="field-group">
+          <label for="#">Card Number</label>
+          <input type="text" id="cnum" name="cnum" placeholder="" />
+          <span></span>
+        </div>
+        <div class="field-group">
+          <label class="label-mm" for="#">Exp. Date (MM/YY)</label>
+          <input type="text" id="MM" name="MM" placeholder="MM" />
+          <span></span>
+        </div>
+        <div class="field-group">
+          <input type="text" id="YY" name="YY" placeholder="YY" />
+          <span></span>
+        </div>
+        <div class="field-group">
+          <label class="label-cvc" for="#">CVC</label>
+          <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" />
+          <span></span>
+        </div>
+        <button class="button-confirm">Confirm</button>
+      </form>
+    </div>
+
+    <div class="cartel-confirm">
+      <img class="icon-complete" src="./images/icon-complete.svg" alt="" />
+      <p class="tex1-cartel">THANK YOU!</p>
+      <p class="tex2-cartel">We've added your card details</p>
+      <button class="button-continue">Continue</button>
+    </div>
+  </body>
+</html>
