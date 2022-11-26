@@ -73,10 +73,11 @@ body {
 
 }
 .field-group input {
+    
     box-sizing: border-box;
     height: 45px;
     border-radius: 10px;
-    width: 100%;
+    width: 400px;
     font-size: 0.8em;
     font-weight: 600;
     -webkit-border-radius: 10px;
@@ -89,6 +90,36 @@ body {
     position: relative;
     top:-35px;
 }
+
+
+
+
+
+.label-fname{
+    position: relative;
+    
+}
+
+#fname {
+    position: relative;
+    
+}
+
+.label-cnum {
+    position: relative;
+   
+}
+
+#cnum{
+    position: relative;
+   
+}
+
+.label-mm{
+    position: relative;
+    top: 55px;
+    }
+
 #MM {
 
 position: relative;
@@ -97,10 +128,7 @@ top: 90px;
 left: -140px;
 }
 
-.label-mm{
-position: relative;
-top: 55px;
-}
+
 
 #YY {
     position:relative;
@@ -108,20 +136,23 @@ top: 55px;
     left: 80px;
     top: 45px;
 } 
-#cvc {
-    position:relative;
-   width:200px;
-    left: 140px;
-   
-}
+
 
 .label-cvc{
     position:relative;
     left: 180px;
     top: -35px;
 }
+
+#cvc {
+    position:relative;
+   width: 225px;
+    left: 140px;
+   
+}
+
 .button-confirm {
-     width: 100%;
+    width: 400px;
      height: 50px;
      position: relative;
      top: 50px;
@@ -189,54 +220,156 @@ top: 55px;
 
 @media screen and  (max-width: 1150px) { 
 body {
-       
-        grid-template-columns: repeat(4 ,1fr);
-    grid-template-rows: repeat(9, 100px);
+    display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+      
 }
-    
+
 
 .fondo {
     display: none;
     
     }
 .fondo-mobile{
-    display: block;
-        grid-column: 2/ 4;
-        grid-row: 1 / 4;
+   display: flex;
+  
+ 
+}
+   
+.fondo-mobile img{
+        object-fit: cover;
+        width: 600px;
+  height: 350px;
     }
+
+
 .card-front {
-  grid-column: 2/ 4;
-    grid-row: 3 / 5;
+ position: relative;
+    top: -130px;
+    left: -20px;
     }
 
 .card-back {
     position: relative;
-    top:50px;
-     grid-column: 2/ 4;
-    grid-row: 1/ 3;  
+    top: -650px;
+    left: 20px;
+      
     }
     
     
 .form-container {
-    grid-column: 2/ 4;
-    grid-row: 6/ 8;  
-}
-#cvc{
-    grid-column: 3/ 5;
-    width: 50%;
-    
-}
-#MM {
-    grid-column: 1/ 2;
+   display: flex;
+   position: relative;
+   top: -450px;
 
+   
+       
+   
+}
+
+
+.label-fname{
+    position: relative;
+    top: -40px; 
+    left: 60px;
+}
+
+#fname {
+    left: -60px;
+   
+}
+
+
+
+.label-cnum {
+    position: relative;
+    top: -35px; 
+    left: 60px;
+}
+
+
+    
+#cnum{
+    position: relative;
+    left: -32px;
+}
+
+
+    
+
+
+.label-mm{
+        top: 55px;
+        left: 60px;
+        }
+    
+
+#MM { 
+    position: relative;
+    width: 70px;
+    top: 90px;
+    left:  -80px;
+    
     }
-    
-    #YY {
-        grid-column: 2/ 3;
-
-}}
 
 
-@media screen and  (max-width: 625px) {
+#YY {
+        position: relative;
+    width: 70px;
+    left: 140px;
+    top: 45px;
+} 
+
+.label-cvc{
+    position:relative;
+    left: 240px;
+    top: -35px;
+}
+
+
+#cvc{
+position: relative;
+width: 220px;
+ left: 200px;
+}
+
+
+.button-confirm {
+    left: 60px;
+}
 
 }
+@media screen and  (max-width: 550px){
+    #fname {
+        width: 360px;
+    }
+#cnum {
+    width: 360px;
+}
+
+#cvc{
+    width: 180px;
+
+}
+
+.button-confirm {
+    width: 360px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
