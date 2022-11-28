@@ -1,6 +1,17 @@
-html{
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:ital,wght@1,100&family=News+Cycle&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100&display=swap');
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+        }
+
+
+html {
+        min-height: 100vh;
+        width: 100%;
+        font-family: 'Poppins' ;
+            }
+        
 body {
     display: grid;
     grid-template-columns: repeat(15, 75px);
@@ -12,15 +23,24 @@ body {
     grid-column: 1/ 5;
     grid-row: 1 / 10;
 }
+
+.fondo img{
+    object-fit: cover;
+    width: 400px;
+    height: 100%;
+}
+
 .fondo-mobile{
     display: none;
 }
 
 .card-front {
+    position: relative;
     display: grid;
     grid-column: 3/ 7;
-    grid-row: 3 / 5;
-    margin-top: -30px;
+    grid-row: 2 / 4;
+  top: -30px;
+  left: -70px;
 }
 
 .card-front p {
@@ -35,30 +55,38 @@ body {
 
 .card-front-name {
     position: relative;
-    top: -110px;
+    top: -85px;
     left: 50px;
 }
 
-.card-front-fecha {
+.card-front-fecha-mes {
     position: relative;
-    top: -160px;
-    left: 350px;
+    top: -110px;
+    left: 353px;
+}
+
+.card-front-fecha-anio {
+    position: relative;
+    top: -135px;
+    left: 390px;
 }
 
 .card-back {
+    position: relative;
     display: grid;
     grid-column: 4/ 8;
-    grid-row: 6/ 8; 
-    margin-top: -30px;
+    grid-row: 5/ 7; 
+    top: -30px;
+    left: -50px;
 }
 
 .card-back p {
     color: white;
 }
 
-.card-pasw {
+.card-cvc {
     position: relative;
-    top: -150px;
+    top: -135px;
     left: 350px; 
 }
 
@@ -66,10 +94,11 @@ body {
 
 
 .form-container {
-   
+   position: relative;
     grid-column: 11/ 16;
-    grid-row: 4/ 7;  
-  
+    grid-row: 2/ 6; 
+    top: 40px; 
+  left: -50px;
 
 }
 .field-group input {
@@ -78,12 +107,14 @@ body {
     height: 45px;
     border-radius: 10px;
     width: 400px;
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    border: solid blueviolet 2px;
 }
 
 .field-group-fname{
@@ -97,6 +128,7 @@ body {
 
 .label-fname{
     position: relative;
+    color: rgba(86, 42, 128, 0.961);
     
 }
 
@@ -107,6 +139,7 @@ body {
 
 .label-cnum {
     position: relative;
+    color: rgba(86, 42, 128, 0.961);
    
 }
 
@@ -118,36 +151,53 @@ body {
 .label-mm{
     position: relative;
     top: 55px;
+    color: rgba(86, 42, 128, 0.961);
     }
 
 #MM {
 
 position: relative;
-width: 70px;
+left: -150px;
 top: 90px;
-left: -140px;
-}
-
+height: 45px;
+padding-left: 17px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: solid blueviolet 2px;
+    background-color: transparent;
+    
+}  
 
 
 #YY {
     position:relative;
-    width: 70px;
-    left: 80px;
+   box-sizing: border-box;
+    height: 45px;
     top: 45px;
-} 
+    left: 80px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 5px;
+    border: solid blueviolet 2px;
+    background-color: transparent;
+}
 
 
 .label-cvc{
     position:relative;
     left: 180px;
     top: -35px;
+    color: rgba(86, 42, 128, 0.961);
 }
 
 #cvc {
     position:relative;
    width: 225px;
-    left: 140px;
+    left: 135px;
    
 }
 
@@ -159,7 +209,7 @@ left: -140px;
      font-weight: 500;
      font-size: 1.2em;
      color: white;
-     background-color: rgb(57, 24, 95);
+     background:linear-gradient(95deg, blueviolet, deeppink);
      border-radius: 10px;
      cursor: pointer;
      font-family: 'Poppins';
@@ -262,7 +312,8 @@ body {
 .form-container {
    display: flex;
    position: relative;
-   top: -450px;
+   top: -430px;
+   left: 0px;
 
    
        
@@ -272,12 +323,12 @@ body {
 
 .label-fname{
     position: relative;
-    top: -40px; 
-    left: 60px;
+    top: -35px; 
+    left: 85px;
 }
 
 #fname {
-    left: -60px;
+    left: -65px;
    
 }
 
@@ -286,14 +337,14 @@ body {
 .label-cnum {
     position: relative;
     top: -35px; 
-    left: 60px;
+    left: 85px;
 }
 
 
     
 #cnum{
     position: relative;
-    left: -32px;
+    left: -30px;
 }
 
 
@@ -301,8 +352,8 @@ body {
 
 
 .label-mm{
-        top: 55px;
-        left: 60px;
+        top: 54px;
+        left: 90px;
         }
     
 
@@ -310,7 +361,7 @@ body {
     position: relative;
     width: 70px;
     top: 90px;
-    left:  -80px;
+    left:  -65px;
     
     }
 
@@ -318,13 +369,13 @@ body {
 #YY {
         position: relative;
     width: 70px;
-    left: 140px;
+    left: 165px;
     top: 45px;
 } 
 
 .label-cvc{
     position:relative;
-    left: 240px;
+    left: 260px;
     top: -35px;
 }
 
@@ -332,12 +383,12 @@ body {
 #cvc{
 position: relative;
 width: 220px;
- left: 200px;
+ left: 220px;
 }
 
 
 .button-confirm {
-    left: 60px;
+    left: 80px;
 }
 
 }
