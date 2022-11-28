@@ -48,27 +48,44 @@ body {
 }
 
 .card-front-num{
-    position: relative;
-    top: -100px;
-    left: 50px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    font-size: 1.7em;
+    width: 400px;
+    letter-spacing: 0.1em
 }
 
+
 .card-front-name {
-    position: relative;
-    top: -85px;
-    left: 50px;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
 }
 
 .card-front-fecha-mes {
-    position: relative;
-    top: -110px;
-    left: 353px;
+    position: absolute;
+    top: 190px;
+    left: 355px;
+    letter-spacing: 0.1em
 }
 
+.barra-fecha{
+    position: absolute;
+    top: 190px;
+    left: 380px;
+  
+}    
+
 .card-front-fecha-anio {
-    position: relative;
-    top: -135px;
-    left: 390px;
+    position: absolute;
+    top: 190px;
+    left: 393px;
+    letter-spacing: 0.1em
 }
 
 .card-back {
@@ -85,9 +102,11 @@ body {
 }
 
 .card-cvc {
-    position: relative;
-    top: -135px;
+    position: absolute;
+    font-size: 1.2em;
+    top: 105px;
     left: 350px; 
+    letter-spacing: 0.1em
 }
 
 
@@ -127,17 +146,24 @@ body {
 
 
 .label-fname{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     position: relative;
     color: rgba(86, 42, 128, 0.961);
     
 }
 
 #fname {
+    
     position: relative;
     
 }
 
 .label-cnum {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     position: relative;
     color: rgba(86, 42, 128, 0.961);
    
@@ -149,15 +175,20 @@ body {
 }
 
 .label-mm{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     position: relative;
     top: 55px;
     color: rgba(86, 42, 128, 0.961);
     }
 
+
+
 #MM {
 
 position: relative;
-left: -150px;
+left: -145px;
 top: 90px;
 height: 45px;
 padding-left: 17px;
@@ -178,7 +209,7 @@ padding-left: 17px;
     top: 45px;
     left: 80px;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     font-size: 1.2em;
     font-weight: 500;
     padding-left: 5px;
@@ -188,6 +219,9 @@ padding-left: 17px;
 
 
 .label-cvc{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     position:relative;
     left: 180px;
     top: -35px;
@@ -297,13 +331,13 @@ body {
 
 .card-front {
  position: relative;
-    top: -130px;
+    top: -160px;
     left: -20px;
     }
 
 .card-back {
     position: relative;
-    top: -650px;
+    top: -580px;
     left: 20px;
       
     }
@@ -312,7 +346,7 @@ body {
 .form-container {
    display: flex;
    position: relative;
-   top: -430px;
+   top: -340px;
    left: 0px;
 
    
@@ -333,7 +367,6 @@ body {
 }
 
 
-
 .label-cnum {
     position: relative;
     top: -35px; 
@@ -348,11 +381,10 @@ body {
 }
 
 
-    
 
 
 .label-mm{
-        top: 54px;
+        top: -4px;
         left: 90px;
         }
     
@@ -360,7 +392,7 @@ body {
 #MM { 
     position: relative;
     width: 70px;
-    top: 90px;
+    top: 30px;
     left:  -65px;
     
     }
@@ -368,15 +400,15 @@ body {
 
 #YY {
         position: relative;
-    width: 70px;
+    width: 75px;
     left: 165px;
-    top: 45px;
+    top: -15px;
 } 
 
 .label-cvc{
     position:relative;
-    left: 260px;
-    top: -35px;
+    left: 265px;
+    top: -95px;
 }
 
 
@@ -384,43 +416,181 @@ body {
 position: relative;
 width: 220px;
  left: 220px;
+ top: -60px;
 }
 
 
 .button-confirm {
     left: 80px;
+    top:-40px;
 }
 
 }
+
+
+
 @media screen and  (max-width: 550px){
-    #fname {
-        width: 360px;
-    }
-#cnum {
-    width: 360px;
+
+
+.fondo-mobile img{
+    height: 180px;
+    
+}   
+
+.card-front img,
+ .card-back img{
+    margin-top: 50px;
 }
 
-#cvc{
-    width: 180px;
-
+.card-back img{
+    position: relative;
+    top: 170px;
+    width: 250px;
+    height: 150;
 }
 
-.button-confirm {
-    width: 360px;
+.card-cvc{
+  
+    font-size: 0.7em;
+    top:278px;
+    left: 185px;
+    
 }
+
+.card-front img {
+    position: relative;
+    top: 20px;
+    width: 250px;
+    height: 150;
+}   
+
+.card-front-num{
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    font-size: 0.9em;
+}
+.card-front-name{
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    font-size: 0.7em;
+}
+.card-front-fecha-mes{
+    position: absolute;
+    top: 170px;
+    left: 187px;
+    font-size: 0.7em;
+       }
+
+.barra-fecha{
+    top:170px;
+    left: 205px;
+    font-size: 0.7em;
+}     
+.card-front-fecha-anio{
+    position: absolute;
+    top: 170px;
+    left: 214px;
+    font-size: 0.7em;
 }
 
 
+.form-container{
+    top: -280px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.field-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.label-fname {
+   font-size: 0.8em;
+    top: 0;
+    left: -50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+  }
+
+#fname {
+    left: 0;
+    width: 250px;
+}
+
+.label-cnum {
+    font-size: 0.8em;
+    top: 0;
+    left: -70px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  #cnum{
+    width: 250px;
+    left: 0;
+  }
+.label-cnum,
+#cnum{
+    top:-35px;
+}  
+
+  .label-mm {
+    font-size: 0.8em;
+    top: 10px;
+    left: -50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  #MM {
+    
+    width: 70px;
+    top: 10px;
+    left: -90px;
+  }
+
+  .label-mm,
+  #MM{
+    top:-30px;
+  }
+
+  #YY {
+    
+    width: 75px;
+    left: -10px;
+    top: -75px;
+  }
+
+ 
+
+  .label-cvc {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    left: 60px;
+    top: -140px;
+  }
+
+  #cvc {
+    width: 90px;
+    top:-140px;
+    left: 80px;
+  }
 
 
+  .button-confirm {
+    width: 250px;
+    left: 0px;
+    top:-130px;
+  }
 
-
-
-
-
-
-
-
-
-
+}
 
