@@ -120,12 +120,11 @@ body {
   left: -50px;
 
 }
+
 .field-group input {
-    
     box-sizing: border-box;
     height: 45px;
     border-radius: 10px;
-    width: 400px;
     font-size: 1.2em;
     font-weight: 500;
     padding-left: 10px;
@@ -133,19 +132,50 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    border: solid blueviolet 2px;
+    
 }
 
-.field-group-fname{
+.formulario__grupo-incorrecto {
+    border:solid rgb(255, 3, 3);
+}
+
+.formulario__grupo-correcto {
+    border: solid rgb(25, 225, 25);
+}
+
+
+
+.formulario__input-error {
     position: relative;
-    top:-35px;
+    display: none;
+        font-size: 0.7em;
+        letter-spacing: 0.02em;
+        word-spacing: 1px;
+        font-style: italic;
+        color: brown;
+        padding-left: 5px;
 }
+            
+    
+.formulario__input-error-activo{
+        display: block;
+    }
 
 
+.formulario__input-error-cnum{
+    position: absolute;
+
+}
+.formulario__input-error-cvc{
+   
+    left: 173px;
+}
 
 
 
 .label-fname{
+    position: relative;
+   
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -154,9 +184,10 @@ body {
     
 }
 
-#fname {
-    
+.fname {
+  
     position: relative;
+    width: 400px;
     
 }
 
@@ -169,8 +200,9 @@ body {
    
 }
 
-#cnum{
+.cnum{
     position: relative;
+    width: 400px;
    
 }
 
@@ -228,9 +260,9 @@ padding-left: 17px;
     color: rgba(86, 42, 128, 0.961);
 }
 
-#cvc {
-    position:relative;
-   width: 225px;
+.cvc {
+    position: relative;
+   width: 230px;
     left: 135px;
    
 }
@@ -239,7 +271,7 @@ padding-left: 17px;
     width: 400px;
      height: 50px;
      position: relative;
-     top: 50px;
+     top: 20px;
      font-weight: 500;
      font-size: 1.2em;
      color: white;
@@ -255,23 +287,30 @@ padding-left: 17px;
 
 
 
+.form-container-inactivo{
+    display: none;
+}
+
 .cartel-confirm{
     display: none;
+    position: relative;
    grid-column: 11/ 16;
-    grid-row: 4/ 6;    
+    grid-row: 3/ 6;   
+    left: -35px; 
+    top: -50px;
 }
 
 .tex1-cartel{
     font-size: 1.6em;
     position: relative;
-    left: 30%;
+    left: 105px;
     top: 20px;
 }
 
 .tex2-cartel{
     position: relative;
     font-size: 1.2em;
-    left: 20%;
+    left: 40px;
     top: 20px;
 }  
 
@@ -301,6 +340,9 @@ padding-left: 17px;
     -o-border-radius: 10px;
 }
 
+.cartel-confirm-activo{
+    display: block;
+}
 
 @media screen and  (max-width: 1150px) { 
 body {
@@ -348,21 +390,34 @@ body {
    position: relative;
    top: -340px;
    left: 0px;
-
-   
-       
-   
 }
+
+
+.formulario__input-error-fname {
+    top: -30px;
+    left: 83px;
+}
+.formulario__input-error-cnum{
+    position: relative;
+    top: px;
+    left: 80px;
+}
+.formulario__input-error-cvc{
+   top:-60px;
+    left: 260px;
+}
+
 
 
 .label-fname{
     position: relative;
-    top: -35px; 
+    top: -65px; 
     left: 85px;
 }
 
-#fname {
+.fname {
     left: -65px;
+    top: -30px;
    
 }
 
@@ -375,7 +430,7 @@ body {
 
 
     
-#cnum{
+.cnum{
     position: relative;
     left: -30px;
 }
@@ -412,7 +467,7 @@ body {
 }
 
 
-#cvc{
+.cvc{
 position: relative;
 width: 220px;
  left: 220px;
@@ -425,8 +480,36 @@ width: 220px;
     top:-40px;
 }
 
+
+
+.cartel-confirm{
+  left: -35px; 
+    top:-380px;
 }
 
+.tex1-cartel{
+    left: 115px;
+    top: 20px;
+}
+
+.tex2-cartel{
+  
+    left: 45px;
+    top: 20px;
+}  
+
+
+.icon-complete{
+    position: relative;
+    left: 145px;
+    top: 20px;
+}
+
+
+.button-continue {
+    left: 45px;
+}
+}
 
 
 @media screen and  (max-width: 550px){
@@ -501,7 +584,7 @@ width: 220px;
 }
 
 .form-container form{
-    display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -512,18 +595,37 @@ width: 220px;
     justify-content: center;
     align-items: center;  
 }
+
+.formulario__input-error-fname {
+   
+    top: -40px;
+    left: 0px;
+}
+.formulario__input-error-cnum{
+  
+    top: -35px;
+    left: 0px;
+}
+.formulario__input-error-cvc{
+   
+   top:-138px;
+    left: 83px;
+    width: 120px;
+}
+
 .label-fname {
    font-size: 0.8em;
-    top: 0;
+    top: -40px;
     left: -50px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 
   }
 
-#fname {
+.fname {
     left: 0;
     width: 250px;
+    top: -40px;
 }
 
 .label-cnum {
@@ -534,12 +636,12 @@ width: 220px;
     letter-spacing: 0.1em;
   }
 
-  #cnum{
+.cnum{
     width: 250px;
     left: 0;
   }
 .label-cnum,
-#cnum{
+.cnum{
     top:-35px;
 }  
 
@@ -579,10 +681,48 @@ width: 220px;
     top: -140px;
   }
 
-  #cvc {
+  .cvc {
     width: 90px;
     top:-140px;
     left: 80px;
+  }
+
+
+  .button-confirm {
+    left: 80px;
+    top:-40px;
+}
+
+
+
+.cartel-confirm{
+  left: -57px; 
+    top:-330px;
+}
+
+.tex1-cartel{
+    font-size: 1.6em;
+    position: relative;
+    left: 105px;
+    top: 20px;
+}
+
+.tex2-cartel{
+    position: relative;
+    font-size: 1em;
+    left: 60px;
+    top: 20px;
+}  
+
+
+
+
+.button-continue {
+    width: 200px;
+    top: 30px;
+    left: 80px;
+   font-size: 1em;
+    color: white;
   }
 
 
@@ -592,5 +732,6 @@ width: 220px;
     top:-130px;
   }
 
-}
 
+
+}

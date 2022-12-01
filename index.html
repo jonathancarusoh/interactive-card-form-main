@@ -50,17 +50,17 @@
     </div>
     
     <div class="form-container">
-      <form action="#">
-        <div class="field-group field-group-fname">
+      <form action="#" id="form">
+        <div class="field-group field-group-fname" id="group__error__fname">
           <label class="label-fname" for="#">Cardholder Name</label>
-          <input class="fname-input" type="text" maxlength="16" id="fname" name="fname" placeholder="" />
-          <span></span>
+          <input id="group__fname" class="fname "  type="text" maxlength="16"  name="fname" placeholder="" />
+          <span class="formulario__input-error formulario__input-error-fname">Name must contain only letters</span>
         </div>
 
-        <div class="field-group">
+        <div class="field-group" id="group__error__cnum">
           <label class="label-cnum" for="#">Card Number</label>
-          <input class="cnum-input" maxlength="19" type="text" id="cnum" name="cnum" placeholder="" />
-          <span></span>
+          <input id="group__cnum" class="cnum" maxlength="19" type="text" name="cnum" placeholder="" />
+          <span class="formulario__input-error formulario__input-error-cnum">Must only contain numbers</span>
         </div>
        
         <div class="field-group">
@@ -98,21 +98,21 @@
             </select>
         </div>
        
-        <div class="field-group">
+        <div class="field-group" id="group__error__cvc">
           <label class="label-cvc" for="#">CVC</label>
-          <input class="cvc-input" maxlength="4" type="text" id="cvc" name="cvc" placeholder="e.g. 123" />
-          <span></span>
+          <input id="group__cvc" class="cvc" maxlength="4" type="text"  name="cvc" placeholder="e.g. 123" />
+          <span class="formulario__input-error formulario__input-error-cvc">Must only contain numbers</span>
         </div>
        
         <button class="button-confirm">Confirm</button>
       </form>
     </div>
 
-    <div class="cartel-confirm">
+    <div class="cartel-confirm" id="cartel__confirm">
       <img class="icon-complete" src="./images/icon-complete.svg" alt="" />
       <p class="tex1-cartel">THANK YOU!</p>
       <p class="tex2-cartel">We've added your card details</p>
-      <button class="button-continue">Continue</button>
+      <button onclick="volverAlForm()" class="button-continue">Continue</button>
     </div>
     <script src="./main.js"></script>
   </body>
